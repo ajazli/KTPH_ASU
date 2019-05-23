@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="css/style.css" type="text/css"/>
+    <link rel="stylesheet" href="css/map.css" type="text/css"/>
+    <link rel="stylesheet" href="css/content.css" type="text/css"/>    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/jquery-1.11.3.min.js" type="text/javascript"></script>
+
+    <script src="js/index_trans.js" type="text/javascript"></script>
+    <script src="js/journeymap.js" type="text/javascript"></script>
+    <script src="js/main.js" type="text/javascript"></script>
+
+    
+
+
+</head>
+<body>
+<header>
+    <nav class="navbar">
+        <a href="index.html"><img id="brand" src="images/ktphlogo.png"/></a>
+        <div class="tabs">
+            <div id="map"></div>
+            <div id="languages">                
+                <div id="en">EN</div>
+                <div id="cn">CN</div>
+            </div>
+            <div id="size">
+                <div id="upsize">+</div>
+                <div id="downsize">-</div>
+            </div>
+        </div>
+    </nav>
+    
+    <div id="journeymapback">
+        
+    </div>
+
+    
+        <div id="headerline-left"></div>
+        <div id="headerline-right"></div>
+        <div id="headertext"></div>
+    </header>
+    <div class="pageBinder" id="chapterINDEX" style="display:block;">
+        <div class="contents">
+            <div id="p1c1" class = "content5 resize" style="top:-30px;">
+
+                <h2 id="welcome"></h2><br><br><br><br><br>
+                <button id='demoBtn' class='btn resize' href=' '><img src='images/cameraReelIconW.png' width='15px;'/> Play Demo </button><br><br>
+                <div id="demoBack"><video id="myVideo" onclick="togglePlay()" class="addImgBorder" controls autoplay style="top:120px; position: relative;">
+                  <source src="videos/webtour.mp4" type="video/mp4">
+                </video></div>
+                
+
+                <script> 
+                    var vid = document.getElementById("myVideo"); 
+                    var isPlaying = true;
+
+                    function togglePlay() {
+                      if (isPlaying) {
+                        myVideo.pause()
+                      } else {
+                        myVideo.play();
+                      }
+                    };
+                    myVideo.onplaying = function() {
+                      isPlaying = true;
+                    };
+                    myVideo.onpause = function() {
+                      isPlaying = false;
+                    };
+                </script> 
+            </div>
+
+        </div>
+    </div>
+</body>
+    
+</html>

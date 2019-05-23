@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="css/style.css" type="text/css"/>
+    <link rel="stylesheet" href="css/chstyle.css" type="text/css"/>
+    <link rel="stylesheet" href="css/asuStyle.css" type="text/css"/>
+    <link rel="stylesheet" href="css/map.css" type="text/css"/>
+    <link rel="stylesheet" href="css/content.css" type="text/css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/jquery-1.11.3.min.js" type="text/javascript"></script>
+    
+        <script src="js/changePageFunction.js" type="text/javascript"></script>
+        <script src="js/journeymap.js" type="text/javascript"></script>
+
+        <script src="js/main.js" type="text/javascript"></script>
+        <script src="js/asuFunction.js" type="text/javascript"></script>   
+        <script src="js/chFunction.js" type='text/javascript'></script>
+        <script src="js/ch_trans.js" type='text/javascript'></script>
+</head>
+<body>
+<header>
+    <nav class="navbar">
+        <a href="index.html"><img id="brand" src="images/ktphlogo.png"/></a>
+        <div class="tabs">
+            <div id="map"></div>
+            <div id="languages">                
+                <div id="en">EN</div>
+                <div id="cn">CN</div>
+            </div>
+            <div id="size">
+                <div id="upsize">+</div>
+                <div id="downsize">-</div>
+            </div>
+        </div>
+    </nav>
+    
+    <div id="journeymapback">
+        
+    </div>
+
+    
+        <div id="headerline-left"></div>
+        <div id="headerline-right"></div>
+        <div id="headertext"></div>
+    </header>
+
+<div class="bodyFlexContainer">
+
+
+<div class="pageBinder" id="chapterCH">
+    <div class="page" id="1">
+        <div class="pagenumber">1 of 8</div>
+        <div id="p1c1" class= "content5 resize" style="top:0%;">
+            
+            
+            
+        </div>
+    </div>
+    <div class="page" id="2"><div class="pagenumber">2 of 7</div>
+        <div id="p2c1" class= "content5 resize" style="top:1%;">
+            <img id="sgmap" src="images/sgmap.png"/>
+            
+            <div id="jchContainer" class="hospContainer"><button class="hosplabel" class="myBtn" id="jchBtn" style="background-color:lightgreen;">Jurong Community Hospital </button><div class="marker">.</div></div>
+            
+            <div id="slhContainer" class="hospContainer"><button class="hosplabel" class="myBtn" id="slhBtn" style="background-color:lightgreen; ">St. Luke's Hospital</button><div class="marker">.</div></div>
+            
+            <div id="ychContainer" class="hospContainer" style=""><button class="hosplabel" class="myBtn" id="ychBtn" style="background-color:salmon; ">Yishun Community Hospital</button><div class="marker">.</div></div>
+       
+            <div id="thkhContainer" class="hospContainer" style=""><button class="hosplabel" class="myBtn" id="thkhBtn" style="background-color:salmon; ">Thye Hua Kwan Hospital</button><div class="marker">.</div></div>
+           
+            <div id="bvhContainer" class="hospContainer" style=""><button class="hosplabel" class="myBtn" id="bvhBtn" style="background-color:lightsteelblue; ">Bright Vision Hospital</button><div class="marker">.</div></div>
+            
+            <div id="rcchContainer" class="hospContainer" style=""><button class="hosplabel" class="myBtn" id="rcchBtn" style="background-color:#FFA42C; ">Ren Ci Community Hospital</button><div class="marker">.</div></div>
+           
+            <div id="sachContainer" class="hospContainer" style=""><button class="hosplabel" class="myBtn" id="sachBtn" style="background-color:#C46BFF;">Saint Andrew's Community Hospital</button><div class="marker">.</div></div>
+            
+            <div class="hospAddBack" id="ychBack">
+                <div class="hospAddContainer" id="ychAdd">
+                    <div class="hospHeader">
+                        Yishun Community Hospital 
+                        <span class="close close2 hospCloseBtn">x</span>
+                    </div>
+                    <div class="hospImage">
+                        <img src="images/CH/ych.jpg"/>
+                    </div>
+                    <div class="hospAddress">
+                        2 Yishun Central 2, 768024
+                    </div>
+                </div>
+            </div>
+            
+            <div class="hospAddBack" id="slhBack">
+                <div class="hospAddContainer" id="slhAdd" style="background-color:lightgreen;">
+                    <div class="hospHeader">
+                        St. Luke's Hospital
+                        <span class="close close2 hospCloseBtn">x</span>
+                    </div>
+                    <div class="hospImage">
+                        <img src="images/CH/slh.PNG"/>
+                    </div>
+                    <div class="hospAddress">
+                        2 Bukit Batok Street 11, Singapore 6596744
+                    </div>
+                </div>
+            </div>
+            
+            <div class="hospAddBack" id="jchBack">
+                <div class="hospAddContainer" id="jchAdd" style="background-color:lightgreen;">
+                    <div class="hospHeader">
+                        Jurong Community Hospital
+                        <span class="close close2 hospCloseBtn">x</span>
+                    </div>
+                    <div class="hospImage">
+                        <img src="images/CH/jch.jpg"/>
+                    </div>
+                    <div class="hospAddress">
+                        1 Jurong East Street 21, 609606
+                    </div>
+                </div>
+            </div>
+            
+            <div class="hospAddBack" id="rcchBack">
+                <div class="hospAddContainer" id="rcchAdd" style="background-color:#FFA42C; ">
+                    <div class="hospHeader">
+                        Ren Ci Community Hospital
+                        <span class="close close2 hospCloseBtn">x</span>
+                    </div>
+                    <div class="hospImage">
+                        <img src="images/CH/rcch.jpg"/>
+                    </div>
+                    <div class="hospAddress">
+                        71 Irrawaddy Rd, 329562
+                    </div>
+                </div>
+            </div>
+            
+            <div class="hospAddBack" id="bvhBack">
+                <div class="hospAddContainer" id="bvhAdd" style="background-color:lightsteelblue; ">
+                    <div class="hospHeader">
+                        Bright Vision Hospital
+                        <span class="close close2 hospCloseBtn">x</span>
+                    </div>
+                    <div class="hospImage">
+                        <img src="images/CH/bvh.jpg"/>
+                    </div>
+                    <div class="hospAddress">
+                        5 Lor Napiri, Singapore 547530
+                    </div>
+                </div>
+            </div>
+            
+            <div class="hospAddBack" id="sachBack">
+                <div class="hospAddContainer" id="sachAdd" style="background-color:#C46BFF;">
+                    <div class="hospHeader">
+                        Saint Andrew's Community Hospital
+                        <span class="close close2 hospCloseBtn">x</span>
+                    </div>
+                    <div class="hospImage">
+                        <img src="images/CH/sach.PNG"/>
+                    </div>
+                    <div class="hospAddress">
+                       8 Simei Street 3, Singapore 529895
+                    </div>
+                </div>
+            </div>
+            
+            <div class="hospAddBack" id="thkhBack">
+                <div class="hospAddContainer" id="thkhAdd">
+                    <div class="hospHeader">
+                        Thye Hua Kwan Hospital
+                        <span class="close close2 hospCloseBtn">x</span>
+                    </div>
+                    <div class="hospImage">
+                        <img src="images/CH/thk.jpg"/>
+                    </div>
+                    <div class="hospAddress">
+                       17 Ang Mo Kio Ave 9, Singapore 569766
+
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <div class="page" id="3"><div class="pagenumber">3 of 8</div>
+        <div id="p3c1" class= "content5 resize" style="top:0px;">
+            
+            
+            
+            
+        </div>
+        <script> 
+            var vid = document.getElementById("myVideo"); 
+            var isPlaying = false;
+
+            function togglePlay() {
+              if (isPlaying) {
+                myVideo.pause()
+              } else {
+                myVideo.play();
+              }
+            };
+            myVideo.onplaying = function() {
+              isPlaying = true;
+            };
+            myVideo.onpause = function() {
+              isPlaying = false;
+            };
+        </script> 
+    </div>
+    <div class="page" id="4"><div class="pagenumber">4 of 8</div>
+        <div id="p4c1" class="content5 resize" style="top:2%;">
+
+            
+            
+        </div>
+    </div>
+    <div class="page" id="5"><div class="pagenumber">5 of 8</div>
+        <div id="p5c1" class= "content3 resize">
+            
+            
+            
+            
+        </div>
+    </div>
+    <div class="page" id="6"><div class="pagenumber">6 of 8</div>
+        <div id="p6c1" class="content3 resize">
+            
+            
+            
+        </div>
+    </div>
+    
+    <div class="page" id="7"><div class="pagenumber">7 of 8</div>
+        <div id="p7c1" class="content3 resize">
+            
+            
+            
+        </div>
+    </div>
+    
+    <div class="page" id="8">
+        <div class="pagenumber">8 of 8</div>
+        
+        <div id="p8c1" class= "content3 resize">
+            
+            
+
+        </div>
+        <div id='mapbtn' style="top:250px;"><div class='mapfont'>Back to Journey Map</div></div>
+    </div>
+    
+    </div>
+    <div class="infoback setTabFont" id="easeBack">
+        <div class="popupbox" id="easeInfo" style="border: 8px solid #42f49e">
+            <div id="symptomsBackHeader" style="height:20px; width:98%;">
+                <span id="easeCloseBtn"class="close close2">x</span>
+            </div>
+            <div id="easeBody">
+                <div id="easeContent1">
+                   
+                    
+                    
+                </div>
+                <div id="easeContent2" style="text-align:center; display:none;">
+                    <video id="easeVideo" controls style="width:60%;">
+                        <source src="videos/CH/ease.mp4" type="video/mp4">
+                    </video>
+                </div>        
+            </div>
+
+        </div>
+    </div>
+    <br><br><br><br>
+        <ul class="breadcrumb" style="width: 1070px;">
+            <li><button id="b01" class="p1">Introduction</button><div id="1arrow" class="arrow-after"></div><div class="arrow-before"></div></li>
+            <li><button id="b02" class="p2">Hospitals</button><div id="2arrow" class="arrow-after"></div><div class="arrow-before"></div></li>
+            <li><button id="b03" class="p3">Rehab-YCH</button><div id="3arrow" class="arrow-after"></div><div id="3" class="arrow-before"></div></li>
+            <li><button id="b04" class="p4">Team</button><div id="4arrow" class="arrow-after"></div><div id="4" class="arrow-before"></div></li>
+            <li><button id="b05" class="p5">Physiotherapy</button><div id="5arrow" class="arrow-after"></div><div id="5" class="arrow-before"></div></li>
+            <li><button id="b06" class="p6">Occupational Therapy</button><div id="6arrow" class="arrow-after"></div><div id="6" class="arrow-before"></div></li>
+            <li><button id="b07" class="p7">Speech Therapy</button><div id="7arrow" class="arrow-after"></div><div id="7" class="arrow-before"></div></li>
+            <li><button id="b08" class="p8">Discharge Care</button></li>
+        </ul>
+
+    
+   <div class="buttonbg">
+        <div id="page-left"></div>
+        <div id="page-right"></div>
+        <div class="pageChangeButton">
+            <button class="hide btn" id="previous">Previous Page</button> <button class="show btn" id="next">Next Page</button>
+        </div>
+    </div>
+    </div>
+    
+</body>
+</html>

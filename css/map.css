@@ -1,0 +1,521 @@
+@font-face {
+	font-family: 'raleway';
+    src: url('../fonts/Raleway-Regular.ttf');
+	src: 
+		local('Raleway Regular'),
+		local('Raleway-Regular'),
+		url('../fonts/Raleway-Regular.ttf') 
+		format('truetype');
+}
+
+#journeymap{
+    background-color:lavender;
+    border-radius: 70px;
+    margin: 0 auto;
+    top: 2vh;
+    left: 0;
+    right:0;
+    bottom:0;
+    border: 10px solid purple;
+    position: fixed;
+    z-index: 1;
+    width:1100px;
+    height: 620px;
+    overflow:hidden;
+    cursor:default;
+}
+#jmfont{
+    color:navy;
+    padding-left: 50px;
+    padding-top: 40px;
+    font-family: Calibri;
+    font-weight: bold;
+    font-size: 50px;
+    width:90%;
+    height:60%;
+    text-align: left;
+    vertical-align: middle;
+    line-height: 100%;
+}
+.jmCloseButton{
+    position: absolute;
+    top:30px;
+    right:50px;
+    color: black;
+    text-align: center;
+    width:1.2em;
+    height: 1.2em;
+    cursor: pointer;
+}
+.jmCloseButton:hover, .jmCloseButton:focus{
+    color: white;
+    opacity: .5;
+    text-decoration: none;
+}
+#journeymapmain{
+    width:760px;
+    position: absolute;
+     margin: 0 auto;
+     top: 0;
+     right: 0;
+     bottom: 0;
+     left: 0;
+}
+
+#journeymapback{
+    display: none;
+    position: fixed;
+    z-index: 2;
+    left: 0;
+    top:0;
+    width: 100vw;
+    height: 100vh;
+    overflow:auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+    cursor: pointer;
+}
+
+
+#mapbg{
+    position: fixed;
+    max-width: 900px;
+    width:900px;
+    left:0;
+    top:100px;
+    right: 0;
+    bottom: 0;
+    margin: 0 auto;
+}
+
+.labels{
+    
+    font-family: "raleway";
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 20px;
+    margin: 0 auto;
+    padding:5px;
+    z-index: 3;
+    display: block;
+    position:absolute;
+    margin-left: -50px;
+    margin-top: -10px;
+    width:150px;
+    background-color: white;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.daylabel{
+    z-index: 3; 
+    color: black;
+    background-color: lightsteelblue;
+    padding:5px;
+    border-top-left-radius: 10px;
+    font-size: 15px;
+    display: block;
+}
+
+.stationlabel{
+    font-size: 15px;
+    font-weight: bold;
+    font-family: Raleway;
+    color:black;
+    border-bottom-right-radius: 10px;
+    padding:5px;
+}
+#ane{
+    left:0px;
+    top:200px;
+    z-index: 2;
+}
+
+#icu{
+    left: 250px;
+    top:120px;
+    z-index: 2;
+}
+
+#asu{
+    left: 160px;
+    top: 330px;
+    z-index: 2;
+}
+
+#ch{
+    left: 430px;
+    top:450px;
+    z-index: 2;
+}
+
+#home{
+    left: 500px;
+    top:220px;
+    z-index: 2;
+}
+#resources{
+    text-align: center;
+    width:100px;
+    font-size: 17px;
+    bottom: 110px;
+    right: -30px;
+    background-color: lightsteelblue;
+    color:black;
+    border: 6px solid white;
+}
+
+#resources:hover{
+    transition: all .1s ease-in-out;
+    transform: scale(1.1);
+}
+
+.stations{
+    align-items: center;
+    height: 80%;
+    width: 100%;
+    display:flex;
+    position:relative;
+    background-color: white;
+}
+
+.station{
+    height: 120px;
+    display:flex;
+    position:relative;
+    width: 120px;
+    flex-shrink: 1;
+    background: url(spritesheet_icons.png);
+}
+
+.ane{
+    background-position: 0px 0px;
+    top: 20%;
+    left: 50%;
+    width:120px;
+    position:absolute;
+}
+
+#ane:hover{
+    transition: all .1s ease-in-out;
+    transform: scale(1.1);
+}
+
+.icu{
+    top: 60%;
+    left: -50%;
+    width:120px;
+    position:absolute;
+    background-position: 0px 120px;
+}
+
+#icu:hover{
+    transition: all .1s ease-in-out;
+    transform: scale(1.1);
+}
+
+.asu{
+    background-position: 0px 260px;
+    top: -120%;
+    left: 40%;
+    width:150px;
+    position:absolute;
+}
+
+#asu:hover{
+    transition: all .1s ease-in-out;
+    transform: scale(1.1);
+}
+
+.ch{
+    background-position: 250px 0px;
+    top: -50%;
+    left: 50%;
+    width:130px;
+    position:absolute;
+}
+
+#ch:hover{
+    transition: all .1s ease-in-out;
+    transform: scale(1.1);
+}
+
+.home{
+    background-position: 250px 260px;
+    top: 50%;
+    left: 35%;
+    width:120px;
+    position:absolute;
+}
+
+#home:hover{
+    transition: all .1s ease-in-out;
+    transform: scale(1.1);
+}
+
+.label{
+    opacity: 0;
+}
+
+.fadein{
+    opacity:1;
+    transition: all .5s ease-in-out;
+}
+
+.fadeout{
+    opacity:0;
+    transition: all .5s ease-in-out;
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 413px) {
+    #journeymap{
+        width:900px;
+        height: 500px;
+    }
+
+    #mapbg{
+        width:700px;
+        left:0;
+        top:90px;
+    }
+    
+    #ane{
+        left:50px;
+        top:140px;
+        z-index: 2;
+    }
+
+    #icu{
+        left: 280px;
+        top:80px;
+        z-index: 2;
+    }
+
+    #asu{
+        left: 190px;
+        top: 270px;
+        z-index: 2;
+    }
+
+    #ch{
+        left: 400px;
+        top:380px;
+        z-index: 2;
+    }
+
+    #home{
+        left: 440px;
+        top:160px;
+        z-index: 2;
+    }
+    #jmfont{
+        font-size: 50px;
+        padding-left: 30px;
+        padding-top: 20px;
+    }
+}
+    
+
+@media only screen and (max-width: 414px) and (min-width: 0px) {
+    #journeymap{
+        width:300px;
+        height: 550px;
+        top: 2vh;
+    }
+
+    #mapbg{
+        width:400px;
+        left:0;
+        top:240px;
+        transform: rotate(50deg);
+    }
+    .ane img{
+        width:50px;
+    }
+    
+    #ane{
+        left:160px;
+        top:130px;
+        z-index: 2;
+    }
+    .ane{
+        width: 90px;
+        left:-70px;
+    }
+
+    #icu{
+        left: 10px;
+        top:250px;
+        z-index: 2;
+    }
+    .icu{
+        left:120px;
+        top:-30px;
+        width: 90px;
+    }
+
+    #asu{
+        left: 170px;
+        top: 200px;
+        z-index: 2;
+    }
+    .asu{
+        left:-100px;
+        top:-20px;
+        width: 100px;
+    }
+
+    #ch{
+        left: 80px;
+        top:410px;
+        z-index: 2;
+    }
+    .ch{
+        width: 90px;
+    }
+
+    #home{
+        left: 180px;
+        top:460px;
+        z-index: 2;
+    }
+    .home{
+        top:-80px;
+        left: 20px;
+        width: 90px;
+    }
+    
+    #jmfont{
+        font-size: 50px;
+        padding-left: 30px;
+        padding-top: 20px;
+    }
+    .labels{
+        width:100px;
+        height: 43px;
+        background-color: rgba(255, 255, 255, 0);
+        
+    }
+    .daylabel{
+        z-index: 3; 
+        color: black;
+        background-color: lightsteelblue;
+        padding:5px;
+        border-top-left-radius: 10px;
+        font-size: 10px;
+        display: block;
+        opacity: .7;
+        display: none;
+    }
+
+    .stationlabel{
+        font-size: 10px;
+        font-weight: bold;
+        font-family: Raleway;
+        color:black;
+        border-bottom-right-radius: 10px;
+        padding:5px;
+        opacity: .7;
+        display: none;
+    }
+    
+}
+
+@media only screen and (max-width: 736px) and (min-width: 415px) {
+    #journeymap{
+        width:600px;
+        height: 300px;
+        top: 2vh;
+    }
+
+    #mapbg{
+        width:400px;
+        left:0;
+
+    }
+
+    
+    #ane{
+        left:100px;
+        top:110px;
+        z-index: 2;
+    }
+    .ane{
+        width: 80px;
+        left:60px;
+    }
+
+    #icu{
+        left: 250px;
+        top:120px;
+        z-index: 2;
+    }
+    .icu{
+        left:-70px;
+        top:-20px;
+        width: 90px;
+    }
+
+    #asu{
+        left: 140px;
+        top: 150px;
+        z-index: 2;
+    }
+    .asu{
+        left:90px;
+        top:-20px;
+        width: 100px;
+    }
+
+    #ch{
+        left: 300px;
+        top:250px;
+        z-index: 2;
+    }
+    .ch{
+        width: 90px;
+    }
+
+    #home{
+        left: 420px;
+        top:160px;
+        z-index: 2;
+    }
+    .home{
+        top:0px;
+        left: -80px;
+        width: 90px;
+    }
+    
+    #jmfont{
+        font-size: 50px;
+        padding-left: 30px;
+        padding-top: 20px;
+    }
+    .labels{
+        width:100px;
+        height: 43px;
+        background-color: rgba(255, 255, 255, 0);
+        
+    }
+    .daylabel{
+        z-index: 3; 
+        color: black;
+        background-color: lightsteelblue;
+        padding:5px;
+        border-top-left-radius: 10px;
+        font-size: 10px;
+        display: block;
+
+    }
+
+    .stationlabel{
+        font-size: 10px;
+        font-weight: bold;
+        font-family: Raleway;
+        color:black;
+        border-bottom-right-radius: 10px;
+        padding:5px;
+    }
+    
+}

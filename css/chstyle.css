@@ -1,0 +1,142 @@
+
+button{
+    text-decoration: none;
+    border-style: none;
+    cursor:pointer;
+}
+
+.hosplabel{
+    font-family: "raleway";
+    font-weight: bold;
+    text-decoration: none;
+    margin: 0 auto;
+    padding:3px;
+    z-index: 1;
+    font-size: 10px;
+    color:black;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding:5px;
+    width:100px;
+    background-color: white;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.hospContainer{
+    display: flex;
+    position:absolute;
+}
+
+.marker{
+    top: 20px;
+    left:-10px;
+    position: relative;
+    color: yellow;
+    font-size: 55px;
+    font-family: aharoni;
+}
+
+button:hover{
+    color:white;
+}
+.hospAddBack{
+    display: none;
+    position: fixed;
+    z-index: 3;
+    margin: 0 auto;
+    left: 0;
+    top:0;
+    bottom:0;
+    width: 100%;
+    height: 100%;
+    overflow:auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+    cursor:pointer;
+}
+.hospAddContainer{
+    width:800px;
+    height: 450px;
+    margin:0 auto;
+    background-color:salmon; 
+    position: absolute;
+    top:80px;
+    bottom:0;
+    left:0;
+    right:0;
+    z-index: 4;
+    border: 10px black solid; 
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    cursor:default;
+}
+.hospCloseBtn{
+    position:relative;
+    top:-10px;
+}
+.hospHeader{
+    padding: 10px;
+    border-bottom: 2px black solid;
+}
+
+.hospImage img{
+    padding-top: 20px;
+    width:60%;
+    position: relative;
+}
+
+#sgmap{
+    width:800px;
+}
+
+#jchContainer{
+    top:35%; 
+    left:30%;
+}
+#slhContainer{
+    top:50%; left:25%;
+}
+#ychContainer{
+    top:10%; left:40%;
+}
+#thkhContainer{
+    top:30%; left:50%;
+}
+#bvhContainer{
+    top:45%; left:40%;
+}
+#rcchContainer{
+    top:65%; left:45%;
+}
+#sachContainer{
+    top:45%; left:60%;
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 413px) {
+    #sgmap{
+    width:700px;
+    }
+    #jchContainer{
+        top:25%; 
+        left:25%;
+    }
+    #slhContainer{
+        top:45%; left:20%;
+    }
+    #ychContainer{
+        top:5%; left:37%;
+    }
+    #thkhContainer{
+        top:25%; left:45%;
+    }
+    #bvhContainer{
+        top:40%; left:37%;
+    }
+    #rcchContainer{
+        top:60%; left:40%;
+    }
+    #sachContainer{
+        top:35%; left:60%;
+    }
+}

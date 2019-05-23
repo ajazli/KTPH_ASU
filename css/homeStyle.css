@@ -1,0 +1,43 @@
+.listNeedsSpace li{
+    margin:14px;
+}
+.adjustThis{
+    margin:30px;  
+    width:30%;
+    height:50%;
+    float:left;
+    list-style:none;
+}
+.adjustThis li{
+    width:40%;
+    background-color:gold;
+    padding:20px;
+    margin:16px;
+    border-radius: 20px;
+}
+    .adjustThis li.selected{
+    background-color: #e0be67;
+}
+.adjustThis li:hover{
+    background-color: darkgoldenrod;
+    cursor:pointer;
+}
+
+.rehabContent{
+    float:left;
+    left:10px;
+    top: 10px;
+    position: relative; 
+    height:96%;
+    width:60%;
+}
+.rehabChildrenContent{
+    margin:0 auto;
+    height:99%;
+    width:100%;
+}
+.homeBasedContent{
+    background-image: url("../images/CH/homebased.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}

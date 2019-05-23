@@ -1,0 +1,489 @@
+@font-face {
+	font-family: 'aharoni' ;
+    src: url('../fonts/ahronbd.ttf');
+	src: 
+		url('../fonts/ahronbd.ttf') 
+		format('truetype');
+}
+
+.navbar{
+    display: block;
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    margin: 0 auto;
+}
+
+.cursorimg{
+    width:70px;
+    position: absolute;
+    z-index: 3;
+    top:-20px;
+    left:550px;
+}
+
+.cursorimg:hover{
+    cursor: pointer;
+}
+
+.tabs{
+    display: block;
+    position: relative;
+    top:25%;
+    left:60px;
+    width:80%;
+    margin: 0 auto;
+}
+
+#brand{
+    display: inline-block;
+    position: fixed;
+    left: 2%;
+    width:150px;
+    padding: 10px;
+    top:0px;
+    margin: 0 auto;
+}
+
+#mapbtn{
+    height:45px;
+    left: 0;
+    right: 0;
+    width: 20%;
+    display: inline-flex;
+    position:fixed;
+    vertical-align:top;
+    text-align: center;
+    background-color: purple;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.mapfont{
+    margin: 0 auto;
+    margin-top: 10px;
+    vertical-align:middle;
+    text-align: center;
+    font-family: 'Raleway';
+    color:white;
+}
+
+#map{
+    height:45px;
+    left: 20%;
+    top:20px;
+    width: 60%;
+    display: inline-flex;
+    position:fixed;
+    vertical-align: middle;
+    line-height: 150%;
+    background-color: purple;
+    margin: 0 auto;
+}
+#lang{
+    height:20px;
+    width: 200px;
+    display: inline-flex;
+    position:fixed;
+    vertical-align:top;
+    background-color: steelblue;
+    margin: 0 auto;
+}
+#languages{
+    font-family: 'aharoni';
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    line-height: 30px;
+    position: relative;
+    display: inline-flex;
+    cursor: pointer;
+}
+#en{
+    position:fixed;
+    width:50px;
+    top:0px;
+    right:150px;
+    z-index: 2;
+    background-color: steelblue;
+}
+#cn{
+    position:fixed;
+    z-index: 2;  
+    width:50px;
+    right:100px;
+    top:0px;
+    background-color: steelblue;
+}
+#en:hover{
+    background-color: #26507F;
+}
+#cn:hover{
+    background-color: #26507F;
+}
+#en:active{
+    background-color: #26507F;
+}
+#cn:active{
+    background-color: #26507F;
+}
+
+#size{
+    font-family: 'aharoni';
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    line-height: 30px;
+    position: relative;
+    display: inline-flex;
+    cursor: pointer;
+}
+#upsize{
+    position:fixed;
+    width:50px;
+    top:0px;
+    right:0px;
+    z-index: 2;
+    background-color: yellowgreen;
+}
+#downsize{
+    position:fixed;
+    z-index: 2;  
+    width:50px;
+    right:50px;
+    top:0px;
+    background-color: yellowgreen;
+}
+
+#headerline-left{
+    background-color: steelblue;
+    height:3px;
+    width:50vw;
+    top: 90px;
+    position:fixed;
+    float:left;
+    margin: 0 auto;
+    -webkit-animation: move-right 1.5s forwards;
+}
+
+#headerline-right{
+    background-color: steelblue;
+    height:3px;
+    width:50vw;
+    top: 90px;
+    position:fixed;
+    right:0;
+    float:right;
+    margin: 0 auto;
+    -webkit-animation: move-left 1.5s forwards;
+}
+
+#page-right{
+    background-color: steelblue;
+    height:3px;
+    width:50vw;
+    bottom: 57px;
+    position:fixed;
+    right:0;
+    float:right;
+    margin: 0 auto;
+    -webkit-animation: move-left 1.5s forwards;
+}
+
+#page-left{
+    background-color: steelblue;
+    height:3px;
+    width:50vw;
+    bottom: 57px;
+    position:fixed;
+    float:left;
+    margin: 0 auto;
+    -webkit-animation: move-right 1.5s forwards;
+}
+
+@-webkit-keyframes move-left {
+    0%   {left:100%;}
+    100% {left:50%;}
+}
+
+@-webkit-keyframes move-right {
+    0%   {left:-100%;}
+    100% {left:0%;}
+}
+header{
+    background-color: white;
+    width:100vw;
+    height: 170px;
+}
+#headertext{
+    background-color: white;
+    color: steelblue;
+    font-family: 'aharoni';
+    font-size: 30px;
+    width:600px;
+    margin: 0 auto;
+    top: 80px;
+    left:0;
+    right: 0;
+    text-align: center;
+    vertical-align: middle;
+    position: fixed;
+    -webkit-animation: fadein 1.5s;
+}
+
+#demoBack{
+    display: none;
+    width:100vw;
+    height: 100vh;
+    position: fixed;
+    margin: 0 auto;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    cursor:pointer;
+    background-color: rgba(0, 0, 0, 0.4)
+}
+
+@-webkit-keyframes fadein {
+    0%   {opacity:0;}
+    100% {opacity:100;}
+}
+
+body{
+    height:100vh;
+    width: 100%;
+    display:block;
+    position:relative;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+#map:hover, #mapbtn:hover{
+    background-color: #4F0068;
+}
+
+#lang:hover{
+    background-color: #26507F;
+}
+#upsize:hover{
+    background-color: #51B526;
+}
+#downsize:hover{
+    background-color: #51B526;
+}
+
+.tabfont{
+    color:white;
+    font-family: 'aharoni';
+    font-size: 30px;
+    width:100%;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 150%;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none;   /* Chrome/Safari/Opera */
+    -khtml-user-select: none;    /* Konqueror */
+    -moz-user-select: none;      /* Firefox */
+    -ms-user-select: none;
+    cursor: pointer ;
+}
+
+#previous{
+    display: inline-block;
+    position: relative;
+}
+#next{
+    display: inline-block;
+    position: relative;
+    outline-style: none;
+}
+.pagenumber{
+    position: fixed;
+    top:50px;
+    margin:auto;
+    right:20px;
+    color: steelblue;
+    font-family: "raleway", helvetica;
+    font-size: 20px;
+    width:100px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 5vh;
+}
+
+.btn {
+    background-color: steelblue;
+    font-family: 'aharoni';
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    border: none;
+    outline:none;   
+}
+.btn:disabled{
+    background-color: lavender;
+    color: #ffffff;
+    font-size: 20px;
+    text-decoration: none;
+    border: none;
+    outline:none;
+}
+.btn:hover:enabled {
+    background-color: darkslateblue;
+    text-decoration: none;
+    border: none;
+    outline:none;
+    cursor:pointer;
+}
+.btn2 {
+    background-color: yellowgreen;
+    font-family: 'aharoni';
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    outline:none;
+    border-radius: 12px;
+}
+.btn2:hover {
+    background-color: #51B526;
+    text-decoration: none;
+    outline:none;
+    cursor:pointer;
+}
+.btn3 {
+    background-color: yellowgreen;
+    font-family: 'aharoni';
+    color: #ffffff;
+    font-size: 18px;
+    padding: 10px;
+    text-decoration: none;
+    outline:none;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+.btn3:hover {
+    background-color: #51B526;
+    text-decoration: none;
+    outline:none;
+    cursor:pointer;
+}
+.btn4 {
+    background-color: steelblue;
+    font-family: 'aharoni';
+    color: #ffffff;
+    text-decoration: none;
+    border: none;
+    outline:none;
+    padding:4px;
+    width:50px;
+    height:50px;
+    vertical-align: sub;
+    border-radius: 25px;
+}
+.btn4:hover:enabled {
+    background-color: darkslateblue;
+    text-decoration: none;
+    border: none;
+    outline:none;
+    cursor:pointer;
+}
+.bodyFlexContainer{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    height:100%;
+}
+.pageBinder{
+    width:100vw;
+    margin: 0 auto;
+    top:120px;
+    bottom:0;
+    position: fixed;
+    display: flex;
+    height: 365px;
+}
+.buttonbg{
+    background-color: white;
+    z-index: 1;
+    width:100%;
+    height:50px;
+    position: fixed;
+    display: block;
+    bottom: 0px;
+    padding-top: 10px;
+}
+.pageChangeButton{
+    margin: 0 auto;
+    text-align: center;
+    line-height: 50px;
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 413px) {
+    #brand{
+        width: 15%;
+        left: 0;
+        margin:0 auto;
+        padding:2px;
+    }   
+}
+
+@media only screen and (max-width: 414px) and (min-width: 0px) {
+   #brand{  
+        width: 90px;
+        left: 0;
+        margin:0 auto;
+        padding:2px;
+    }
+    .btn{
+        width:120px;
+        font-size: 12px;
+        padding:10px;
+    }
+    
+}
+
+@media only screen and (max-width: 414px) and (min-width: 0px) {
+    .navbar{
+        height:50px;
+    }
+    #brand{
+        top:5px;
+        padding: 10px;
+        background-color: white;
+        z-index: 3;
+    }
+    #map{
+        padding-left: 50px;
+        width:100%;
+        margin:0 auto;
+        height:5%;
+        z-index: 2;
+    }
+    #languages{
+        line-height: 20px;
+        font-size: 12px;
+    }
+    #size{
+        line-height: 20px;
+        font-size: 12px;
+    }
+    #en{
+        z-index: 1;
+    }
+    #cn{
+        position:fixed;
+        z-index: 1;  
+        width:50px;
+        right:100px;
+        top:0px;
+        background-color: steelblue;
+    }
+    .tabfont{
+        font-size: 20px;
+    }
+}
+
